@@ -1,1 +1,0 @@
-char data type is used to store one character at a time in a variable so when we input the string in a char variable it will only store the first character and rest of the characters will be lost from the memory and when we print the char variable it will only print that one character which the variable is holding.
