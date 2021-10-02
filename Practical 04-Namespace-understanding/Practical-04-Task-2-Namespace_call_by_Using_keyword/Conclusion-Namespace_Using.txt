@@ -1,0 +1,1 @@
+calling the method using the keyword using namespace in order to perform the same function with different parameters and return the different parameters so that the compiler didn't get confused to perform the task.
