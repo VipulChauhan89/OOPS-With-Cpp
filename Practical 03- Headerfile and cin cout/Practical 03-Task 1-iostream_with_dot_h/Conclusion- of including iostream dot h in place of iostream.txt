@@ -1,0 +1,1 @@
+If we try to include the iostream header file using iostream.h then it will give the fatal error because iostream.h header file does not exist in the c++ library it will be able to pass the preprocessor phase but it will not be able to pass the compiler phase because the scope of cin and cout is not defined and it will give the sementic error.
