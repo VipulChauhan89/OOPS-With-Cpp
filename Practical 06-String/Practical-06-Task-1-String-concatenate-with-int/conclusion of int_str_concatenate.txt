@@ -1,0 +1,1 @@
+the code will be able to pass the preprocessor phase of the compiler but the code will not pass the compilation phase of the compiler and it will generate two same errors that is invalid operands to binary expression because the concatination of string and integer is not allowed by the g++ compiler.
