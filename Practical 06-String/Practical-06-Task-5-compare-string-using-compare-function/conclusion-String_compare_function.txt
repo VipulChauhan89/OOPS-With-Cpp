@@ -1,0 +1,3 @@
+ASCII difference between two strings is returned by the string compare function for example
+suppose string s1="a" and string s2="L" so the function s1.compare(s2) will return the difference of ASCII value of s1 and s2 which is 21 because the ASCII value of 'a' is 97 and the ASCII value of 'L' is 76 .
+So 97-26=76 therefore compare() function returns the difference of the ASCII value of two strings.
