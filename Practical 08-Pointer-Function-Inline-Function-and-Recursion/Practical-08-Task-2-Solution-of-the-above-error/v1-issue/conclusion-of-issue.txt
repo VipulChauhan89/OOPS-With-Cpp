@@ -1,0 +1,1 @@
+The above code will be able to pass the preprocessor phase of the compiler but it will not be able to pass the cpompilation phase of the compiler and it will generate an error because in the above code the arr is an array and we can't perform pointer arithmetics to an array.
