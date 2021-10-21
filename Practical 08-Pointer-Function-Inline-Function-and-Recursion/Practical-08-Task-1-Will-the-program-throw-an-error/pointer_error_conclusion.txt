@@ -1,0 +1,1 @@
+The code will be able to pass the preprocessor phase of the compilation but it will  not pass the compilation phase of the compiler and generate the error of excess elements in scalar initializer because *ptr is an scalar object and it is assigned with more than one value so the compiler throws an error.
