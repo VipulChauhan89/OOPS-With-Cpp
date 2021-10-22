@@ -1,0 +1,1 @@
+here the swapping of two variable will not be reflected back in the main function as the vlue will only remain swapped in the function and as the function ends the value of swap is also lost therefor the result after the swapp will be same.
