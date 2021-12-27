@@ -12,30 +12,30 @@ class College
 		int roll;
 		int marks;
 	public:
-		void setname(College &s)
+		void setname()
 		{
 			fflush(stdin);
-			getline(cin,s.name);
+			getline(cin,name);
 		}
-		void setroll(College &s)
+		void setroll()
 		{
-			cin>>s.roll;
+			cin>>roll;
 		}
-		void setmarks(College &s)
+		void setmarks()
 		{
-			cin>>s.marks;
+			cin>>marks;
 		}
-		string getname(College &s)
+		string getname()
 		{
-			return s.name;
+			return name;
 		}
-		int getroll(College &s)
+		int getroll()
 		{
-			return s.roll;
+			return roll;
 		}
-		int getmarks(College &s)
+		int getmarks()
 		{
-			return s.marks;
+			return marks;
 		}
 	 
 };
@@ -56,11 +56,11 @@ int main()
 	for(i=1;i<=n;i++)
 	{
 		cout<<"Enter the name of Student "<<i<<" :";
-		s[i].setname(s[i]);
+		s[i].setname();
 		cout<<"Enter the Roll number of Student "<<i<<" :";
-		s[i].setroll(s[i]);
+		s[i].setroll();
 		cout<<"Enter the marks of Student "<<i<<" :";
-		s[i].setmarks(s[i]);
+		s[i].setmarks();
 		cout<<endl;
 	}
 	cout<<endl;
@@ -80,9 +80,9 @@ int main()
 	cout<<"The deatails of "<<n<<" Students by c++ class College are :"<<endl;
 	for(i=1;i<=n;i++)
 	{
-		cout<<"Name of Student "<<i<<" is : "<<s[i].getname(s[i])<<endl;
-		cout<<"Roll number of Student "<<i<<" is : "<<s[i].getroll(s[i])<<endl;
-		cout<<"Marks of Student "<<i<<" is : "<<s[i].getmarks(s[i])<<endl;
+		cout<<"Name of Student "<<i<<" is : "<<s[i].getname()<<endl;
+		cout<<"Roll number of Student "<<i<<" is : "<<s[i].getroll()<<endl;
+		cout<<"Marks of Student "<<i<<" is : "<<s[i].getmarks()<<endl;
 		cout<<endl;
 	}
 	cout<<endl;
