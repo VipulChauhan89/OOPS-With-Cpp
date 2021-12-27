@@ -1,3 +1,4 @@
+
 /*
 	WAP in which you create a Student class having basic information for each student, like name, age and marks. By using friend function add marks of all the students [lets say 3 objects] and print it.
 */
@@ -12,36 +13,36 @@ class Student
 		int marks;
 		static int sum;
 	public:
-		void setname(Student &s)
+		void setname()
 		{
 			fflush(stdin);
-			getline(cin,s.name);
+			getline(cin,name);
 		}
-		void setage(Student &s)
+		void setage()
 		{
-			cin>>s.age;
+			cin>>age;
 		}
-		void setmarks(Student &s)
+		void setmarks()
 		{
-			cin>>s.marks;
+			cin>>marks;
 		}
-		string getname(Student &s)
+		string getname()
 		{
-			return s.name;
+			return name;
 		}
-		int getage(Student &s)
+		int getage()
 		{
-			return s.age;
+			return age;
 		}
-		int getmarks(Student &s)
+		int getmarks()
 		{
-			return s.marks;
+			return marks;
 		}
-		int getsum(Student &s)
+		int getsum()
 		{
-			return s.sum;
+			return sum;
 		}
-		friend void add( Student &s);   
+		friend void add(Student &s);   
 };
 int Student::sum=0;		//initialization of the static private variable 
 void add(Student &s)     // friend function definition
@@ -58,11 +59,11 @@ int main()
 	for(i=1;i<=n;i++)
 	{
 		cout<<"Enter the name of Student "<<i<<" :";
-		s[i].setname(s[i]);
+		s[i].setname();
 		cout<<"Enter the age of Student "<<i<<" :";
-		s[i].setage(s[i]);
+		s[i].setage();
 		cout<<"Enter the marks of Student "<<i<<" :";
-		s[i].setmarks(s[i]);
+		s[i].setmarks();
 		cout<<endl;
 		add(s[i]);
 	}
@@ -70,12 +71,12 @@ int main()
 	cout<<"The deatails of "<<n<<" Students are :"<<endl;
 	for(i=1;i<=n;i++)
 	{
-		cout<<"Name of Student "<<i<<" is : "<<s[i].getname(s[i])<<endl;
-		cout<<"Age of Student "<<i<<" is : "<<s[i].getage(s[i])<<endl;
-		cout<<"Marks of Student "<<i<<" is : "<<s[i].getmarks(s[i])<<endl;
+		cout<<"Name of Student "<<i<<" is : "<<s[i].getname()<<endl;
+		cout<<"Age of Student "<<i<<" is : "<<s[i].getage()<<endl;
+		cout<<"Marks of Student "<<i<<" is : "<<s[i].getmarks()<<endl;
 		cout<<endl;
 	}
 	cout<<endl;
-	cout<<"Total marks of "<<n<<" Students are : "<<s[i].getsum(s[i])<<endl;
+	cout<<"Total marks of "<<n<<" Students are : "<<s[i].getsum()<<endl;
 	return 0;
 }
