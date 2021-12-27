@@ -14,46 +14,45 @@ class Directory
 	private:
 		string name,address,telephone_number,mobile_number,head_of_family;
 	public:
-		void setname(Directory &s)
+		void setname()
 		{
-			getline(cin,s.name);
+			getline(cin,name);
 		}
-		void setaddress(Directory &s)
+		void setaddress()
 		{
-			getline(cin,s.address);
+			getline(cin,address);
 		}
-		void settelephone_number(Directory &s)
+		void settelephone_number()
 		{
-			getline(cin,s.telephone_number);
+			getline(cin,telephone_number);
 		}
-		void setmobile_number(Directory &s)
+		void setmobile_number()
 		{
-			getline(cin,s.mobile_number);
+			getline(cin,mobile_number);
 		}
-		void sethead_of_family(Directory &s)
+		void sethead_of_family()
 		{
-			getline(cin,s.head_of_family);
+			getline(cin,head_of_family);
 		}
-
-		string getname(Directory &s)
+		string getname()
 		{
-			return s.name;
+			return name;
 		}
-		string getaddress(Directory &s)
+		string getaddress()
 		{
-			return s.address;
+			return address;
 		}
-		string gettelephone_number(Directory &s)
+		string gettelephone_number()
 		{
-			return s.telephone_number;
+			return telephone_number;
 		}
-	 	string getmobile_number(Directory &s)
+	 	string getmobile_number()
 		{
-			return s.mobile_number;
+			return mobile_number;
 		}
-		string gethead_of_family(Directory &s)
+		string gethead_of_family()
 		{
-			return s.head_of_family;
+			return head_of_family;
 		}
 
 };
@@ -69,29 +68,29 @@ int main()
 	{
 		fflush(stdin);
 		cout<<"Enter the name of contact "<<i+1<<" :";
-		s[i].setname(s[i]);
+		s[i].setname();
 		fflush(stdin);
 		cout<<"Enter the Address of contact "<<i+1<<" :";
-		s[i].setaddress(s[i]);
+		s[i].setaddress();
 		fflush(stdin);
 		cout<<"Enter the telephone number with STD code of contact "<<i+1<<" :";
-		s[i].settelephone_number(s[i]);
+		s[i].settelephone_number();
 		fflush(stdin);
 		cout<<"Enter the Mobile number of the contact "<<i+1<<" :";
-		s[i].setmobile_number(s[i]);
+		s[i].setmobile_number();
 		fflush(stdin);
 		cout<<"Enter the name of head of the family of contact "<<i+1<<" :";
-		s[i].sethead_of_family(s[i]);
+		s[i].sethead_of_family();
 	}
 	cout<<endl;
 	cout<<"Save contact in the directory are :"<<endl;
 	for(i=0;i<n;i++)
 	{
-		cout<<"Name of contact "<<i+1<<" : "<<s[i].getname(s[i])<<endl;
-		cout<<"Address of contact "<<i+1<<" : "<<s[i].getaddress(s[i])<<endl;
-		cout<<"Telephone number with STD code of contact "<<i+1<<" : "<<s[i].gettelephone_number(s[i])<<endl;
-		cout<<"Mobile number of the contact "<<i+1<<" : "<<s[i].getmobile_number(s[i])<<endl;
-		cout<<"Name of head of the family of contact "<<i+1<<" : "<<s[i].gethead_of_family(s[i])<<endl;
+		cout<<"Name of contact "<<i+1<<" : "<<s[i].getname()<<endl;
+		cout<<"Address of contact "<<i+1<<" : "<<s[i].getaddress()<<endl;
+		cout<<"Telephone number with STD code of contact "<<i+1<<" : "<<s[i].gettelephone_number()<<endl;
+		cout<<"Mobile number of the contact "<<i+1<<" : "<<s[i].getmobile_number()<<endl;
+		cout<<"Name of head of the family of contact "<<i+1<<" : "<<s[i].gethead_of_family()<<endl;
 		cout<<endl;
 	}
 	cout<<endl;

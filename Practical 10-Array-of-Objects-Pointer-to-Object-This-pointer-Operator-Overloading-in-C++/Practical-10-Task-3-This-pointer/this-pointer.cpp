@@ -13,11 +13,11 @@ class Remainder
         {
             this->a=a;
             this->b=b;
-            this->rem=a%b;
+            rem=a%b;
         }
-        int getrem(Remainder s)
+        int getrem()
         {
-            return s.rem;
+            return rem;
         }
 };
 int main()
@@ -29,6 +29,6 @@ int main()
     cout<<"Enter the second number :";
     cin>>b;
     Remainder s(a,b);
-    cout<<"Remainder of "<<a<<"/"<<b<<" = "<<s.getrem(s)<<endl;
+    cout<<"Remainder of "<<a<<"/"<<b<<" = "<<s.getrem()<<endl;
     return 0;
 }

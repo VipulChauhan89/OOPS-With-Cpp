@@ -11,30 +11,30 @@ class Student
 		int age;
 		int marks;
 	public:
-		void setname(Student &s)
+		void setname()
 		{
 			fflush(stdin);
-			getline(cin,s.name);
+			getline(cin,name);
 		}
-		void setage(Student &s)
+		void setage()
 		{
-			cin>>s.age;
+			cin>>age;
 		}
-		void setmarks(Student &s)
+		void setmarks()
 		{
-			cin>>s.marks;
+			cin>>marks;
 		}
-		string getname(Student &s)
+		string getname()
 		{
-			return s.name;
+			return name;
 		}
-		int getage(Student &s)
+		int getage()
 		{
-			return s.age;
+			return age;
 		}
-		int getmarks(Student &s)
+		int getmarks()
 		{
-			return s.marks;
+			return marks;
 		} 
 };
 int main()
@@ -49,11 +49,11 @@ int main()
 	for(i=1;i<=n;i++,a++)
 	{
 		cout<<"Enter the name of Student "<<i<<" :";
-		a->setname(*a);
+		a->setname();
 		cout<<"Enter the age of Student "<<i<<" :";
-		a->setage(*a);
+		a->setage();
 		cout<<"Enter the marks of Student "<<i<<" :";
-		a->setmarks(*a);
+		a->setmarks();
 		cout<<endl;
 	}
 	cout<<endl;
@@ -61,9 +61,9 @@ int main()
 	a=s;
 	for(i=1;i<=n;i++,a++)
 	{
-		cout<<"Name of Student "<<i<<" is : "<<a->getname(*a)<<endl;
-		cout<<"Age of Student "<<i<<" is : "<<a->getage(*a)<<endl;
-		cout<<"Marks of Student "<<i<<" is : "<<a->getmarks(*a)<<endl;
+		cout<<"Name of Student "<<i<<" is : "<<a->getname()<<endl;
+		cout<<"Age of Student "<<i<<" is : "<<a->getage()<<endl;
+		cout<<"Marks of Student "<<i<<" is : "<<a->getmarks()<<endl;
 		cout<<endl;
 	}
 	cout<<endl;
